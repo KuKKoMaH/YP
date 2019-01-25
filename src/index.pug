@@ -1,0 +1,13 @@
+extends pug/_layout
+include modules/form/form
+
+block body
+  include modules/header/header
+  include modules/slide/slide
+  include modules/action/action
+  include modules/bullets/bullets
+  include modules/footer/footer
+
+  div.hidden
+    +form('form')
+    //include modules/popup/popup

@@ -1,0 +1,80 @@
+.slide
+  background: #f2f2f2
+  background-image: url(../../img/bg.jpg)
+  background-size: contain
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  @media (max-width: $breakpoint-md - 1)
+    background-size: cover
+
+  &__wrapper
+    display: flex
+    padding: 120px 10px 130px
+
+    @media (max-width: $breakpoint-md - 1)
+      flex-direction: column
+      padding: 18px 32px 20px
+
+  &__content
+    flex: 1
+
+  &__title
+    font-family: 'Franklin Gothic Demi Cond', sans-serif
+    font-weight: normal
+    font-size: 67px
+    line-height: .8
+    margin: 0 0 12px
+
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 21px
+      text-align: center
+
+  &__subtitle
+    font-size: 32px
+    font-weight: 300
+    line-height: .9
+    color: #191919
+    margin: 0 0 160px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 11px
+      text-align: center
+      margin-bottom: 18px
+
+  &__cta
+    font-family: 'Carefree Cyrillic', sans-serif
+    color: #00b7f4
+    padding-left: 60px
+    display: flex
+    align-items: center
+    @media (max-width: $breakpoint-md - 1)
+      padding-left: 0
+      justify-content: center
+      margin-bottom: 13px
+
+    &:after
+      content: ''
+      display: block
+      //width: 100%
+      flex: 1
+      height: 200px
+      background-image: url(../../img/arrow1.png)
+      background-size: contain
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      max-width: 450px
+
+      @media (max-width: $breakpoint-md - 1)
+        background-image: url(../../img/arrow2.png)
+        max-width: 89px
+        height: 40px
+
+
+  &__text
+    flex: 0 auto
+    margin: 0
+    font-size: 43px
+    line-height: .65
+    align-self: center
+
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 21px

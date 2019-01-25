@@ -1,0 +1,40 @@
+.action
+  display: flex
+  align-items: center
+  padding-top: 45px
+  padding-bottom: 45px
+
+  @media (max-width: $breakpoint-md - 1)
+    flex-direction: column
+    text-align: center
+    padding-top: 12px
+    padding-bottom: 28px
+
+  &__text
+    flex: 1
+    font-size: 37px
+    color: #363940
+    font-family: 'Franklin Gothic Demi Cond', sans-serif
+    padding-right: 12px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 16px
+      padding: 0 30px
+      max-width: 400px
+      margin-bottom: 12px
+
+  &__button
+    border-radius: 8px
+    border: 2px solid #902914
+    font-size: 25px
+    color: #902914
+    padding: 20px 45px
+    background: #ffffff
+    anim()
+
+    &:hover
+      background: #902914
+      color: #ffffff
+
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 15px
+      padding: 10px 15px

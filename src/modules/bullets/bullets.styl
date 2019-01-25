@@ -1,0 +1,53 @@
+.bullets
+  display: flex
+  justify-content: space-around
+  margin-bottom: 75px
+  @media (max-width: $breakpoint-md - 1)
+    flex-direction: column
+    align-items: center
+    margin: 0 auto 32px
+    width: 320px
+    align-items: flex-start
+
+  &__item
+    height: 151px
+    position: relative
+    display: flex
+    align-items: flex-end
+
+    @media (max-width: $breakpoint-md - 1)
+      margin-bottom: 24px
+      height: 89px
+
+    &:before
+      content: ''
+      display: block
+      width: 151px
+      height: 151px
+      border: 12px solid #9e4532
+      border-radius: 50%
+      position: absolute
+      @media (max-width: $breakpoint-md - 1)
+        border-width: 4px
+        width: 89px
+        height: 89px
+
+  &__text
+    //position: absolute
+    position: relative
+    background: #ffffff
+    margin-left: 81px
+    bottom: 0
+    padding: 0px 10px
+    font-family: 'Franklin Gothic Demi Cond', sans-serif
+    font-size: 25px
+    color: #363940
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 18px
+      margin-left: 45px
+
+    b
+      font-size: 37px
+      color: #902914
+      @media (max-width: $breakpoint-md - 1)
+        font-size: 27px

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="all" href="style.css">
+    <!--link(rel="shortcut icon" href="/favicon.ico")-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400;subset=cyrillic" rel="stylesheet">
+  </head>
+  <body onunload="">
+    <header class="header c" id="header">
+      <div class="header__logo"><img class="header__img" width="100" height="83" src="img/img-logo.svg">
+        <div class="header__info">Оценочная компания №1<br>(по версии RAEX)</div>
+      </div>
+      <div class="header__contacts">
+        <div class="header__phone">+7 495 797 30 31</div>
+        <div class="header__email">kadastr@srgroup.ru</div>
+      </div>
+    </header>
+    <div class="slide">
+      <div class="slide__wrapper c">
+        <div class="slide__content">
+          <h1 class="slide__title">Оспаривание<br>кадастровой стоимости</h1>
+          <h2 class="slide__subtitle">снижаем кадастровую стоимость<br>коммерческой недвижимости</h2>
+          <div class="slide__cta">
+            <p class="slide__text">Рассчитать экономию<br>
+              бесплатно и получить<br>
+              подробную консультацию
+            </p>
+          </div>
+        </div>
+            <div class="form">
+              <form>
+                    <div class="input">
+                      <input class="input__input" value="" placeholder="Кадастровый номер*">
+                      <div class="input__error"></div>
+                    </div>
+                    <div class="input">
+                      <input class="input__input" value="" placeholder="Имя*">
+                      <div class="input__error"></div>
+                    </div>
+                    <div class="input">
+                      <input class="input__input" value="" placeholder="Телефон*">
+                      <div class="input__error"></div>
+                    </div>
+                    <div class="input">
+                      <input class="input__input" value="" placeholder="E-mail*">
+                      <div class="input__error"></div>
+                    </div>
+                <input class="input__submit" type="submit" value="Рассчитать бесплатно">
+              </form>
+            </div>
+      </div>
+    </div>
+    <div class="action c">
+      <div class="action__text">Можем подтвердить каждый оспоренный нами объект оригиналами документов</div>
+      <button class="action__button popup__opener" href="#form">Запросить документы</button>
+    </div>
+    <div class="bullets c">
+      <div class="bullets__item">
+        <div class="bullets__text">выиграли более<br><b>100 дел</b></div>
+      </div>
+      <div class="bullets__item">
+        <div class="bullets__text">снизили кадастровую<br>
+          стоимость более чем на<br><b>100 млрд руб.</b>
+        </div>
+      </div>
+      <div class="bullets__item">
+        <div class="bullets__text">сэкономили нашим<br>
+          клиентам более<br><b>1 млрд руб.</b>
+        </div>
+      </div>
+      <div class="bullets__item">
+        <div class="bullets__text">Средний процент<br>
+          снижения<br><b>___ %</b>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">Процедура оспаривания кадастровой стоимости проводится в соответствии с<br>
+      Федеральным законом от 29.07.1998 г. № 135-ФЗ «Об оценочной деятельности в Российской Федерации».
+    </footer>
+    <div class="hidden">
+          <div class="form" id="form">
+            <form>
+                  <div class="input">
+                    <input class="input__input" value="" placeholder="Кадастровый номер*">
+                    <div class="input__error"></div>
+                  </div>
+                  <div class="input">
+                    <input class="input__input" value="" placeholder="Имя*">
+                    <div class="input__error"></div>
+                  </div>
+                  <div class="input">
+                    <input class="input__input" value="" placeholder="Телефон*">
+                    <div class="input__error"></div>
+                  </div>
+                  <div class="input">
+                    <input class="input__input" value="" placeholder="E-mail*">
+                    <div class="input__error"></div>
+                  </div>
+              <input class="input__submit" type="submit" value="Рассчитать бесплатно">
+            </form>
+          </div>
+      <!--include modules/popup/popup-->
+    </div>
+  </body>
+  <script src="js/app.js"></script>
+</html>

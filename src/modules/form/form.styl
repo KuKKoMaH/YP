@@ -1,0 +1,55 @@
+.form
+  width: 100%
+  max-width: 430px
+  background: #373941
+  padding: 42px 63px 34px 40px
+  align-self: center
+  margin: 0 auto
+  position: relative
+
+  @media (max-width: $breakpoint-md - 1)
+    padding: 24px 37px 20px 24px
+
+  .mfp-close
+    color: #ffffff
+
+
+.input
+  margin-bottom: 25px
+  @media (max-width: $breakpoint-md - 1)
+    margin-bottom: 15px
+
+  &__input
+    display: block
+    width: 100%
+    border: 1px solid #00b6f4
+    outline: 0
+    font-size: 16px
+    color: #2d2d2d
+    padding: 12px 30px
+    border-radius: 8px
+    background: #ffffff
+    anim()
+
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 10px
+      padding: 6px 15px
+
+  &__submit
+    background: #00b6f4
+    color: #ffffff
+    font-size: 25px
+    line-height: 1
+    text-align: center
+    width: 100%
+    display: block
+    border-radius: 8px
+    padding: 23px 0
+    anim()
+
+    &:hover
+      background: darken( #00b6f4, 10%)
+
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 14px
+      padding: 14px 0
