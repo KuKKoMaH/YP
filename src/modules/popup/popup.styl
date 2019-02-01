@@ -1,2 +1,21 @@
 .popup
   margin: 0 auto
+
+.modal
+  max-width: 600px
+  margin: 0 auto
+  position: relative
+  background: #ffffff
+  padding: 22px 30px
+  @media (max-width: $breakpoint-md - 1)
+    padding: 8px 12px
+
+  &__title
+    font-family: 'Franklin Gothic Demi Cond', sans-serif
+    font-size: 25px
+    text-align: center
+    margin-bottom: 31px
+
+  &__text
+    text-align: center
+    font-size: 16px

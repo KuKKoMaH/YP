@@ -14,10 +14,7 @@
       <div class="header__logo"><img class="header__img" width="100" height="83" src="img/img-logo.svg">
         <div class="header__info">Оценочная компания №1<br>(по версии RAEX)</div>
       </div>
-      <div class="header__contacts">
-        <div class="header__phone">+7 495 797 30 31</div>
-        <div class="header__email">kadastr@srgroup.ru</div>
-      </div>
+      <div class="header__contacts"><a class="header__phone" href="tel:74957973031">+7 495 797 30 31</a><a class="header__email" href="mailto:kadastr@srgroup.ru">kadastr@srgroup.ru</a></div>
     </header>
     <div class="slide">
       <div class="slide__wrapper c">
@@ -74,35 +71,44 @@
       </div>
       <div class="bullets__item">
         <div class="bullets__text">Средний процент<br>
-          снижения<br><b>___ %</b>
+          снижения<br><b>30%</b>
         </div>
       </div>
     </div>
-    <footer class="footer">Процедура оспаривания кадастровой стоимости проводится в соответствии с<br>
-      Федеральным законом от 29.07.1998 г. № 135-ФЗ «Об оценочной деятельности в Российской Федерации».
+    <footer class="footer">
+      <div class="footer__disclaimer">Процедура оспаривания кадастровой стоимости проводится в соответствии с<br>
+        Федеральным законом от 29.07.1998 г. № 135-ФЗ «Об оценочной деятельности в Российской Федерации».
+      </div>
+      <div class="footer__container">
+        <div class="w footer__links">
+          <div class="footer__text">Все права защищены, 2019</div><a class="footer__link popup__opener" href="#polytic">Политика конфеденциальности</a><a class="footer__link popup__opener" href="#agreement">Пользовательское соглашение</a>
+        </div>
+      </div>
     </footer>
     <div class="hidden">
-          <div class="form" id="form">
-            <form>
-                  <div class="input">
-                    <input class="input__input" value="" placeholder="Кадастровый номер*">
-                    <div class="input__error"></div>
-                  </div>
-                  <div class="input">
-                    <input class="input__input" value="" placeholder="Имя*">
-                    <div class="input__error"></div>
-                  </div>
-                  <div class="input">
-                    <input class="input__input" value="" placeholder="Телефон*">
-                    <div class="input__error"></div>
-                  </div>
-                  <div class="input">
-                    <input class="input__input" value="" placeholder="E-mail*">
-                    <div class="input__error"></div>
-                  </div>
-              <input class="input__submit" type="submit" value="Рассчитать бесплатно">
-            </form>
-          </div>
+      <div class="form" id="form">
+        <form>
+              <div class="input">
+                <input class="input__input" value="" placeholder="Имя*">
+                <div class="input__error"></div>
+              </div>
+              <div class="input">
+                <input class="input__input" value="" placeholder="E-mail*">
+                <div class="input__error"></div>
+              </div>
+          <input class="input__submit" type="submit" value="Запросить документы">
+        </form>
+      </div>
+      <div class="modal" id="polytic">
+        <h2>Политика конфеденциальности</h2>
+      </div>
+      <div class="modal" id="agreement">
+        <h2>Пользовательское соглашение</h2>
+      </div>
+      <div class="modal" id="success">
+        <div class="modal__title">Спасибо!</div>
+        <div class="modal__text">В течение 2 рабочих дней вы получите расчет на электронную почту.</div>
+      </div>
       <!--include modules/popup/popup-->
     </div>
   </body>

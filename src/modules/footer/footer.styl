@@ -1,9 +1,42 @@
 .footer
-  font-size: 16px
-  text-align: center
-  color: #191919
-  margin-bottom: 12px
-  @media (max-width: $breakpoint-md - 1)
-    font-size: 9px
-    br
-      display: none
+  &__disclaimer
+    font-size: 16px
+    text-align: center
+    color: #191919
+    margin-bottom: 12px
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 9px
+      br
+        display: none
+
+  &__container
+    background: #2d2d2d
+
+  &__links
+    height: 43px
+    align-items: center
+    @media (max-width: $breakpoint-md - 1)
+      flex-direction: column
+      justify-content: center
+      height: auto
+      padding: 4px 0
+
+  &__text
+    color: #ffffff
+    font-size: 15px
+    margin-right: auto
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 12px
+      text-align: center
+      margin-right: 0
+
+  &__link
+    color: #ffffff
+    font-size: 15px
+    margin-left: 14px
+    &:hover
+      text-decoration: underline
+
+    @media (max-width: $breakpoint-md - 1)
+      font-size: 12px
+      margin-top: 6px
