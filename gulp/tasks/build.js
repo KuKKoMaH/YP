@@ -4,7 +4,7 @@ var config = require('../config');
 
 function build (cb) {
   runSequence(
-    'clean',
+    // 'clean',
     'css',
     'html',
     'js',

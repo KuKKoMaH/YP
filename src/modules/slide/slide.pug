@@ -9,4 +9,11 @@ include ../form/form
         | Рассчитать экономию#[br]
         | бесплатно и получить#[br]
         | подробную консультацию
-  +form()
+  #form.form
+    form(action='sendForm.php')
+      input(type='hidden' name='form' value='calc')
+      +input('Кадастровый номер*')(name='number')
+      +input('Имя*')(name='name')
+      +input('Телефон*')(type='tel' name='phone')
+      +input('E-mail*')(name='email')
+      input.input__submit(type='submit' value='Рассчитать бесплатно')

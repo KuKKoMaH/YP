@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YP</title>
+    <title>Оспаривание кадастровой стоимости</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,32 +28,33 @@
             </p>
           </div>
         </div>
-            <div class="form">
-              <form>
-                    <div class="input">
-                      <input class="input__input" value="" placeholder="Кадастровый номер*">
-                      <div class="input__error"></div>
-                    </div>
-                    <div class="input">
-                      <input class="input__input" value="" placeholder="Имя*">
-                      <div class="input__error"></div>
-                    </div>
-                    <div class="input">
-                      <input class="input__input" value="" placeholder="Телефон*">
-                      <div class="input__error"></div>
-                    </div>
-                    <div class="input">
-                      <input class="input__input" value="" placeholder="E-mail*">
-                      <div class="input__error"></div>
-                    </div>
-                <input class="input__submit" type="submit" value="Рассчитать бесплатно">
-              </form>
-            </div>
+        <div class="form" id="form">
+          <form action="sendForm.php">
+            <input type="hidden" name="form" value="calc">
+                <div class="input">
+                  <input class="input__input" value="" placeholder="Кадастровый номер*" name="number">
+                  <div class="input__error"></div>
+                </div>
+                <div class="input">
+                  <input class="input__input" value="" placeholder="Имя*" name="name">
+                  <div class="input__error"></div>
+                </div>
+                <div class="input">
+                  <input class="input__input" value="" placeholder="Телефон*" type="tel" name="phone">
+                  <div class="input__error"></div>
+                </div>
+                <div class="input">
+                  <input class="input__input" value="" placeholder="E-mail*" name="email">
+                  <div class="input__error"></div>
+                </div>
+            <input class="input__submit" type="submit" value="Рассчитать бесплатно">
+          </form>
+        </div>
       </div>
     </div>
     <div class="action c">
       <div class="action__text">Можем подтвердить каждый оспоренный нами объект оригиналами документов</div>
-      <button class="action__button popup__opener" href="#form">Запросить документы</button>
+      <button class="action__button popup__opener" href="#request">Запросить документы</button>
     </div>
     <div class="bullets c">
       <div class="bullets__item">
@@ -86,18 +87,21 @@
       </div>
     </footer>
     <div class="hidden">
-      <div class="form" id="form">
-        <form>
-              <div class="input">
-                <input class="input__input" value="" placeholder="Имя*">
-                <div class="input__error"></div>
-              </div>
-              <div class="input">
-                <input class="input__input" value="" placeholder="E-mail*">
-                <div class="input__error"></div>
-              </div>
-          <input class="input__submit" type="submit" value="Запросить документы">
-        </form>
+      <div id="request">
+        <div class="form">
+          <form action="sendForm.php">
+            <input type="hidden" name="form" value="request">
+                <div class="input">
+                  <input class="input__input" value="" placeholder="Имя*" name="name">
+                  <div class="input__error"></div>
+                </div>
+                <div class="input">
+                  <input class="input__input" value="" placeholder="E-mail*" name="email">
+                  <div class="input__error"></div>
+                </div>
+            <input class="input__submit" type="submit" value="Запросить документы">
+          </form>
+        </div>
       </div>
       <div class="modal" id="polytic">
         <h2>Политика конфеденциальности</h2>

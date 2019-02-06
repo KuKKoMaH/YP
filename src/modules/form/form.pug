@@ -3,12 +3,3 @@ mixin input(placeholder, search, select, textarea)
   div(class=className)
     input.input__input(value='' placeholder=placeholder)&attributes(attributes)
     .input__error
-
-mixin form(id)
-  .form(id=id)
-    form
-      +input('Кадастровый номер*')()
-      +input('Имя*')()
-      +input('Телефон*')()
-      +input('E-mail*')()
-      input.input__submit(type='submit' value='Рассчитать бесплатно')

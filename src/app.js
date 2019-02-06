@@ -1,14 +1,7 @@
 import 'jquery';
 import 'magnific-popup/dist/jquery.magnific-popup.js';
 import 'jquery.maskedinput/src/jquery.maskedinput';
-
-// import './modules/header/header';
-// import './modules/slide/slide';
-// import './modules/form/form';
-// import './modules/catalog/catalog';
-// import './modules/delivery/delivery';
-// import './modules/faq/faq';
-
+import './modules/form/form'
 $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
 $('.popup__opener').on('click', (e) => {
@@ -23,3 +16,4 @@ window.onpageshow = function (event) {
     window.location.reload()
   }
 };
+

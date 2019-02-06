@@ -9,11 +9,13 @@ block body
   include modules/footer/footer
 
   div.hidden
-    .form#form
-      form
-        +input('Имя*')()
-        +input('E-mail*')()
-        input.input__submit(type='submit' value='Запросить документы')
+    #request
+      .form
+        form(action='sendForm.php')
+          input(type='hidden' name='form' value='request')
+          +input('Имя*')(name='name')
+          +input('E-mail*')(name='email')
+          input.input__submit(type='submit' value='Запросить документы')
     .modal#polytic
       h2 Политика конфеденциальности
     .modal#agreement

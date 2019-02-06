@@ -38,7 +38,7 @@ function createConfig (env) {
           // exclude: /node_modules/,
           loader:  'babel-loader',
           options: {
-            presets: ['es2015', 'stage-2', 'env']
+            presets: ['env','es2015', 'stage-0']
           }
         }
       ]
