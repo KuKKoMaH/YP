@@ -31,7 +31,7 @@ $fields_errors = array(
 
 $back_email = array(
   'calc' => array('template' => 'calc.html', 'subject' => 'Рассчет кадастровой стоимости.'),
-  'request' => array('template' => 'request.html', 'subject' => 'Подтверждающие документы'),
+  'request' => array('template' => 'request.html', 'subject' => 'Опыт SRG. Оспаривание кадастровой стоимости.'),
 );
 
 $result = array('success' => true);

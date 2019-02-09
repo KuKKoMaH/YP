@@ -29,7 +29,7 @@ import Validator from '../../js/Validator';
     },
     fields,
     onSuccess: () => {
-      $.magnificPopup.open({ type: 'inline', items: { src: '#success' } });
+      $.magnificPopup.open({ type: 'inline', items: { src: '#success-form' } });
     }
   });
 })();
@@ -61,7 +61,7 @@ import Validator from '../../js/Validator';
     },
     fields,
     onSuccess: () => {
-      $.magnificPopup.open({ type: 'inline', items: { src: '#success' } });
+      $.magnificPopup.open({ type: 'inline', items: { src: '#success-request' } });
     }
   });
 })();
